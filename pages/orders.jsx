@@ -2,13 +2,13 @@ import React from "react";
 import { FaShoppingBag } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data.js";
+import { Header } from "@/components/Header.jsx";
 
 const orders = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <div className="flex justify-between px-4 pt-4">
-        <h2>Orders</h2>
-        <h2>Welcome Back, Clint</h2>
+      <div className="flex justify-between w-full">
+        <Header heading="Orders" />
       </div>
       <div className="p-4">
         <div className="w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto">
