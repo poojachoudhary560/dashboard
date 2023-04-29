@@ -1,16 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
-import { IoDiamondSharp, IoMdSettings } from "react-icons/io";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { FiSettings } from "react-icons/fi";
+import { IoMdSettings } from "react-icons/io";
 import { BsFillPersonFill, BsFillXDiamondFill } from "react-icons/bs";
-import {
-  FaHome,
-  FaPowerOff,
-  FaShoppingBag,
-  FaTachometerAlt,
-} from "react-icons/fa";
+import { FaHome, FaPowerOff, FaShoppingBag } from "react-icons/fa";
 
 export const Sidebar = ({ children }) => {
   return (

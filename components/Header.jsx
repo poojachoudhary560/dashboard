@@ -1,24 +1,16 @@
-import React, { useState } from "react";
-import { BsBell, BsFillBellFill, BsMoon } from "react-icons/bs";
-import { FaMoon, FaRegMoon } from "react-icons/fa";
-import { HiCog, HiCurrencyDollar, HiLogout, HiViewGrid } from "react-icons/hi";
+import React from "react";
+import { BsFillBellFill } from "react-icons/bs";
+import { FaMoon } from "react-icons/fa";
 
 export const Header = ({ heading }) => {
-  const [openMenu, setOpenMenu] = useState(false);
-  const handleClick = () => {
-    setOpenMenu((prevState) => !prevState);
-  };
   return (
     <div className="flex justify-between items-center px-4 pt-4 w-full">
-      <h1 // className="px-2"
-        className="flex items-center text-xl font-extrabold dark:text-white"
-      >
+      <h1 className="flex items-center text-xl font-extrabold dark:text-white">
         {heading}
         <span className="bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">
           PRO
         </span>
       </h1>
-      {/* <h2>Welcome Back, Clint</h2> */}
       <div className="flex items-center gap-10">
         <FaMoon size={20} />
         <BsFillBellFill size={20} />
@@ -34,15 +26,7 @@ export const Header = ({ heading }) => {
             PC
           </span>
         </div>
-        {/* <img
-          id="avatarButton"
-          type="button"
-          data-dropdown-toggle="userDropdown"
-          data-dropdown-placement="bottom-start"
-          className="w-10 h-10 rounded-full cursor-pointer"
-          src="/docs/images/people/profile-picture-5.jpg"
-          alt="User dropdown"
-        ></img> */}
+
         <div
           id="userDropdown"
           className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
